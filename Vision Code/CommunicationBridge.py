@@ -15,7 +15,7 @@ NetworkTable.SetClientMode()
 NetworkTable.SetIPAddress('10.17.58.2')
 
 table = NetworkTable.GetTable('Target Status Table')
-#print "Searching for connection..."
+print "Searching for connection..."
 
 numFailures = 0
 visionLaunchDelay = 0.6
@@ -33,6 +33,6 @@ while True:
 	#print lines[1]
 	if not visionTrackingRunning:
 		numFailures += 1
-		#launchVisionTracking()
-		#print "Disabled... attempting to refresh %i" % numFailures
+		launchVisionTracking()
+		print "Disabled... attempting to refresh %i" % numFailures
 		time.sleep(visionLaunchDelay)
