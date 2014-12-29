@@ -14,6 +14,5 @@ This information is then translated into movement commands, reorienting the robo
 a ball.
 
 CommunicationBridge.py was a script I wrote in order to compensate for random interruptions in connection between the
-driver station laptop and the robot. Whenever the video stream from the robot is interrupted, CommunicationBridge waits
-a moment, attempts to reconnect with the robot and reboot the vision code, and repeats in an infinite loop until a connection
-is established again.
+driver station laptop and the robot. Whenever the video stream from the robot is interrupted, CommunicationBridge
+reboots the vision code and continuously attempts to reconnect with the robot until it succeeds.
