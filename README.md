@@ -15,5 +15,5 @@ a ball.
 
 CommunicationBridge.py was a script I wrote in order to compensate for random interruptions in connection between the
 driver station laptop and the robot. Whenever the video stream from the robot is interrupted, CommunicationBridge waits
-a moment, attempts to reconnect with the robot and reboot the vision code, and repeats until a connection is established
-again.
+a moment, attempts to reconnect with the robot and reboot the vision code, and repeats in an infinite loop until a connection
+is established again.
